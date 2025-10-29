@@ -1,0 +1,45 @@
+{
+  "name": "chatsapp",
+  "version": "1.0.0",
+  "description": "WhatsApp-like chat application built with MEAN stack",
+  "main": "server/src/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && ng serve",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && ng build --prod",
+    "test": "cd client && ng test && cd ../server && npm test",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "server:dev": "cd server && npm run dev",
+    "setup": "npm run install-all && npm run build"
+  },
+  "keywords": [
+    "chat",
+    "whatsapp",
+    "mean-stack",
+    "angular",
+    "nodejs",
+    "mongodb",
+    "socket.io",
+    "encryption",
+    "biometric"
+  ],
+  "author": "ChatsApp Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/chatsapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/chatsapp/issues"
+  },
+  "homepage": "https://github.com/yourusername/chatsapp#readme"
+}
