@@ -273,7 +273,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ ] Multi-device support
 - [ ] Message scheduling
 - [ ] Chat backup/restore
-
-## Support
-
-For support, email support@chatsapp.com or create an issue in the repository.
